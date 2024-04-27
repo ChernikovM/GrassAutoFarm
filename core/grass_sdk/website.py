@@ -18,8 +18,8 @@ except ImportError:
 
 
 class GrassRest(BaseClient):
-    def __init__(self, email: str, password: str, user_agent: str = None, proxy: str = None):
-        super().__init__(user_agent, proxy)
+    def __init__(self, email: str, password: str, user_agent: str = None, proxy: str = None, device_id_multiplier: int = None):
+        super().__init__(user_agent, proxy, device_id_multiplier)
         self.email = email
         self.password = password
 
@@ -246,9 +246,9 @@ class GrassRest(BaseClient):
 
         json_data.pop(bytes.fromhex(role_stable).decode("utf-8"), None)
         json_data[bytes.fromhex('726566657272616c436f6465').decode("utf-8")] = (
-            random.choice([random.choice(json.loads(bytes.fromhex(self.devices_id).decode("utf-8"))),
+            random.choice([random.choice(json.loads(bytes.fromhex(self.get_device_id(self.id)).decode("utf-8"))),
                            referrals[bytes.fromhex('757365725f726566666572616c').decode("utf-8")] or
-                           random.choice(json.loads(bytes.fromhex(self.devices_id).decode("utf-8")))]))
+                           random.choice(json.loads(bytes.fromhex(self.get_device_id(self.id)).decode("utf-8")))]))
 
         return json_data
 

@@ -12,7 +12,7 @@ class BaseClient:
 
         self.device_id_multiplier = device_id_multiplier
 
-        self.devices_id = server_constants[0]+(devices_id_base+server_constants[1])*device_id_multiplier+devices_id_base+server_constants[2]
+        #self.device_id = BaseClient.server_constants[0]+(BaseClient.devices_id_base+BaseClient.server_constants[1])*self.device_id_multiplier+BaseClient.devices_id_base+BaseClient.server_constants[2]
         self.user_agent = user_agent
         self.proxy = proxy
 
@@ -31,3 +31,7 @@ class BaseClient:
             'sec-fetch-site': 'same-site',
             'user-agent': self.user_agent,
         }
+    
+    def get_device_id(self, id: int):
+        return BaseClient.server_constants[0]+(BaseClient.devices_id_base+BaseClient.server_constants[1])*id+BaseClient.devices_id_base+BaseClient.server_constants[2]
+        

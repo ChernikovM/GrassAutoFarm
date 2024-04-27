@@ -29,7 +29,7 @@ from better_proxy import Proxy
 class Grass(GrassWs, GrassRest, FailureCounter):
     # global_fail_counter = 0
 
-    def __init__(self, _id: int, email: str, password: str, proxy: str = None, db: AccountsDB = None):
+    def __init__(self, _id: int, email: str, password: str, proxy: str = None, db: AccountsDB = None, device_id_multiplier: int = None):
         self.proxy = Proxy.from_str(proxy).as_url if proxy else None
         super(GrassWs, self).__init__(email=email, password=password, user_agent=UserAgent().random, proxy=self.proxy, device_id_multiplier=_id)
         self.proxy_score: Optional[int] = None

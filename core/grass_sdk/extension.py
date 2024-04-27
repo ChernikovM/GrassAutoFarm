@@ -9,7 +9,7 @@ from core.utils.exception import WebsocketClosedException, ProxyForbiddenExcepti
 
 
 class GrassWs:
-    def __init__(self, user_agent: str = None, proxy: str = None):
+    def __init__(self, user_agent: str = None, proxy: str = None, device_id_multiplier: int = None):
         self.user_agent = user_agent
         self.proxy = proxy
 

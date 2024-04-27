@@ -1,11 +1,6 @@
 # Grass Auto Reger&Farm 🔹
 
-
-Discover the latest `<crypto/>` moves in my Telegram Channel:
-
-[![My Channel 🥰](https://img.shields.io/badge/Web3_Enjoyer_|_Subscribe_🥰-0A66C2?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/web3_enjoyer_club) 
-
-Cheapest [proxies and servers](https://teletype.in/@web3enjoyer/4a2G9NuHssy) which fits for  on [grass.io](https://app.getgrass.io/register/?referralCode=erxggzon61FWrJ9).
+Cheapest [proxies and servers](https://proxy-seller.io/?partner=RLLKRCHWGZ90VW) which fits for  on [grass.io](https://app.getgrass.io/register/?referralCode=pti9wWsdR9-wcvD).
 
 ![image](https://github.com/MsLolita/grass/assets/58307006/610b95b4-369f-4a71-ac24-f45e8dee6380)
 
@@ -17,7 +12,7 @@ Cheapest [proxies and servers](https://teletype.in/@web3enjoyer/4a2G9NuHssy) whi
 
 > You can put as many proxies as u can, bot uses database and will load up proxies from extra ones
 
-🔹**To say thanks for work: 0x000007c73a94f8582ef95396918dcd04f806cdd8**
+🔹**To say thanks for work: 0x8DD780a898F4B2A01ff121ac07c2d6B47A3E037b**
 
 
 ## Quick Start 📚
@@ -53,7 +48,7 @@ Cheapest [proxies and servers](https://teletype.in/@web3enjoyer/4a2G9NuHssy) whi
 ## Quick Start By Docker
    1. Install Docker-CE: `curl -sSL -k https://get.docker.com | sh`
    2. Install Docker Compose: `curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && chmod +x /usr/local/bin/docker-compose`
-   3. Clone Source Code: `git clone https://github.com/MsLolita/grass.git`
+   3. Clone Source Code: `git clone https://github.com/ChernikovM/GrassAutoFarm.git`
    4. Configuration: Modify `data/accounts.txt` and `data/proxies.txt`
    5. Start Container: `docker-compose up -d`
 

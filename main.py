@@ -46,7 +46,7 @@ async def worker_task(_id, account: str, proxy: str = None, db: AccountsDB = Non
     grass = None
 
     try:
-        grass = Grass(_id, email, password, proxy, db)
+        grass = Grass(_id, email, password, proxy, db, _id)
 
         if REGISTER_ACCOUNT_ONLY:
             await asyncio.sleep(random.uniform(*REGISTER_DELAY))
